@@ -1,14 +1,20 @@
-import {SafeAreaView, StyleSheet, Text, View} from 'react-native';
+import {SafeAreaView, ScrollView, StyleSheet, Text, View} from 'react-native';
 import React from 'react';
+import ImageBox from '../../subcomponents/ImageBox';
 
 const HomeScreen = () => {
   return (
-    <View style={{flex: 1, alignContent: 'center', alignItems: 'center'}}>
-      <Text>HomeScreen</Text>
+    <View >
+    <ScrollView>
+     <ImageBox></ImageBox>
+    </ScrollView>
     </View>
   );
 };
 
 export default HomeScreen;
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  container:{
+  }
+});
