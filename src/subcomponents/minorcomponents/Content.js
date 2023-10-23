@@ -35,7 +35,7 @@ const Content = () => {
       </View>
       <View style={{flex:1,flexDirection:'row'}}>
         <View>
-          <View style={{marginLeft: 10, marginTop: 5}}>
+          <View style={{marginLeft: 10, marginTop: 5,marginRight:10}}>
             <Text>
               <Text
                 style={[
@@ -52,9 +52,9 @@ const Content = () => {
               <Text
                 style={[
                   styles.bold,
-                  {fontSize: 17, marginTop: 0, fontWeight: '500'},
+                  {fontSize: 17, marginTop: 0, fontWeight: '500',marginLeft:15},
                 ]}>
-                <Text > . </Text>12k
+                12k
               </Text>
               <Text style={{fontSize: 15}}>   Posts</Text>
             </Text>
@@ -90,6 +90,12 @@ const styles = StyleSheet.create({
     margin: 10,
     marginBottom: 4,
     marginTop: 5,
+  },
+  dot:{
+   height:10,
+   width:10,
+   backgroundColor:'gray',
+   borderRadius:70,
   },
   textNormal: {
     color: 'black',
