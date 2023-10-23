@@ -8,8 +8,8 @@ const HomeScreen = () => {
     <View>
       <ScrollView>
         <ImageBox></ImageBox>
+        <TabBarComponent></TabBarComponent>
       </ScrollView>
-      <TabBarComponent></TabBarComponent>
     </View>
   );
 };

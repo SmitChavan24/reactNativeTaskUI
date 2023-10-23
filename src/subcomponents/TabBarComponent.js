@@ -4,7 +4,7 @@ import TabBar from './TabBarminor'
 
 const TabBarComponent = () => {
   return (
-    <View>
+    <View style={{bottom:100}}>
     <TabBar></TabBar>
     </View>
   )
@@ -12,4 +12,5 @@ const TabBarComponent = () => {
 
 export default TabBarComponent
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({
+})
