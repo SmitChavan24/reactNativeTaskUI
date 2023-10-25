@@ -1,4 +1,4 @@
-import {StyleSheet, Text, View, Image} from 'react-native';
+import {StyleSheet, Text, View, Image,TouchableOpacity} from 'react-native';
 import React from 'react';
 
 const PillsburyComponent = () => {
@@ -6,7 +6,7 @@ const PillsburyComponent = () => {
     <View
       style={{
         width: 390,
-        height: 700,
+        height: 800,
         backgroundColor: '#194993',
         marginTop: 25,
         marginLeft: 1.5,
@@ -43,8 +43,69 @@ const PillsburyComponent = () => {
       </View>
 
       <View>
-        <Text style={styles.textBig}>Which one do you love relishing the most ?</Text>
+        <Text style={styles.textBig}>
+          Which one do you love relishing the most ?
+        </Text>
       </View>
+
+      <View
+        style={{flex: 1, flexDirection: 'row', bottom: 150, marginLeft: 22}}>
+        <View>
+          <Image
+            source={require('../assets/majorImages/cakeone.png')}
+            resizeMode="contain"></Image>
+          <Image
+            source={require('../assets/majorImages/thumbsup.png')}
+            resizeMode="contain"
+            style={{marginLeft: 50}}></Image>
+        </View>
+        <View>
+          <Image
+            source={require('../assets/majorImages/caketwo.png')}
+            resizeMode="contain"></Image>
+          <Image
+            source={require('../assets/majorImages/thumbsup.png')}
+            resizeMode="contain"
+            style={{marginLeft: 50}}></Image>
+        </View>
+      </View>
+      <View style={{bottom: 80}}>
+        <View style={{alignItems: 'center'}}>
+          <Text style={{color: 'white', fontSize: 12, marginBottom: 10}}>
+            Voting ends in
+          </Text>
+          <Text style={{color: 'white', fontSize: 26}}>9 : 23: 10: 25</Text>
+        </View>
+        <View
+          style={{
+            flexDirection: 'row',
+          }}>
+          <Text style={{color: 'white', marginLeft: 115}}>Days</Text>
+          <Text style={{color: 'white', marginLeft: 15}}>Hrs</Text>
+          <Text style={{color: 'white', marginLeft: 21}}>Min</Text>
+          <Text style={{color: 'white', marginLeft: 17}}>Sec</Text>
+        </View>
+      </View>
+      <View style={styles.buttoncontainer}>
+          <TouchableOpacity>
+            <Image
+              source={require('../assets/majorImages/like2.png')}
+              style={styles.likeImage}
+              resizeMode="contain"></Image>
+          </TouchableOpacity>
+          <TouchableOpacity>
+            <Image
+              source={require('../assets/majorImages/commentlight.png')}
+              style={styles.likeImage}
+              resizeMode="contain"></Image>
+          </TouchableOpacity>
+          <TouchableOpacity>
+            <Image
+              source={require('../assets/majorImages/sharelight.png')}
+              style={styles.likeImage}
+              resizeMode="contain"></Image>
+          </TouchableOpacity>
+        </View>
     </View>
   );
 };
@@ -72,11 +133,19 @@ const styles = StyleSheet.create({
     marginLeft: 10,
     bottom: 10,
   },
-  textBig:{
+  textBig: {
     color: 'white',
     fontFamily: 'serif',
-    fontSize: 30,
-    bottom: 500,
-    textAlign:'center',
-  }
+    fontSize: 28,
+    bottom: 160,
+    textAlign: 'center',
+  },
+  likeImage: {
+    marginRight: 19,
+  },
+  buttoncontainer: {
+    bottom:25,
+    marginLeft: 15,
+    flexDirection: 'row',
+  },
 });
