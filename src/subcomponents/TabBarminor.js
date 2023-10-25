@@ -1,6 +1,5 @@
 import {StyleSheet, Text, View, TouchableOpacity} from 'react-native';
 import React, {useState} from 'react';
-import DropShadow from "react-native-drop-shadow";
 import Photos from './PhotosComponent'
 const Posts = () => {
   <View style={styles.posts}>Posts</View>;
