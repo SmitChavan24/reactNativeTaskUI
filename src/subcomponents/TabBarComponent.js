@@ -4,7 +4,7 @@ import TabBar from './TabBarminor'
 
 const TabBarComponent = () => {
   return (
-    <View style={{bottom:100}}>
+    <View >
     <TabBar></TabBar>
     </View>
   )

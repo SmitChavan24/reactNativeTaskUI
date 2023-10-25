@@ -80,7 +80,6 @@ export default Content;
 
 const styles = StyleSheet.create({
   container:{
-    bottom:98,
     position:'relative'
   },
   bold: {
