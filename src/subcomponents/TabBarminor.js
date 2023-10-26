@@ -7,7 +7,7 @@ const TabBarminor = () => {
   const screenWidth = Dimensions.get('window').width;
   const [activeTab, setActiveTab] = useState('posts');
   return (
-    <View>
+    <View style={{width:screenWidth}}>
       <View style={styles.container}>
         <TouchableOpacity onPress={() => setActiveTab('posts')}>
           <Text
