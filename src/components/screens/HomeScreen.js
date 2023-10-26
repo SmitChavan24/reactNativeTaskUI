@@ -6,15 +6,15 @@ import PillsburyComponent from '../../subcomponents/PillsburyComponent';
 
 const HomeScreen = () => {
   return (
-    <View>
+    <SafeAreaView>
       <ScrollView showsVerticalScrollIndicator={false}>
-      <View style={{flex:1,bottom:1.9,right:1}}>
+      <View style={{flex:1, flexDirection:'column',alignItems:'center '}}>
         <ImageBox></ImageBox>
         <TabBarComponent></TabBarComponent>
         <PillsburyComponent></PillsburyComponent>
       </View>
       </ScrollView>
-    </View>
+    </SafeAreaView>
   );
 };
 
