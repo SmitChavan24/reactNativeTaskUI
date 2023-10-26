@@ -13,7 +13,7 @@ const HeaderComponent = () => {
   return (
     <View>
       <View style={[styles.container, {flexDirection: 'row'}]}>
-        <View style={{flexDirection: 'row'}}>
+        <View style={{flexDirection: 'row',left:10}}>
           <Image
             source={require('../../assets/majorImages/pillsbury.png')}
             style={styles.circleimage}></Image>
@@ -55,6 +55,7 @@ const styles = StyleSheet.create({
   dots: {
     height: 32,
     width: 10,
+    right:20
   },
   dotmargin: {
     marginLeft: 190,
