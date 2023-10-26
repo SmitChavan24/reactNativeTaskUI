@@ -14,7 +14,7 @@ const ImageComment = () => {
     <View style={{alignItems:'center'}}>
     <Image
       source={require('../../assets/majorImages/bournvita.png')}
-      style={[{width: screenWidth-10}, styles.mainImage]}
+      style={[{width: screenWidth-4}, styles.mainImage]}
       resizeMode="contain"></Image>
     <View style={styles.buttoncontainer}>
       <TouchableOpacity>

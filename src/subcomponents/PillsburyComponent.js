@@ -1,16 +1,18 @@
-import {StyleSheet, Text, View, Image,TouchableOpacity} from 'react-native';
+import {StyleSheet, Text, View, Image,TouchableOpacity,Dimensions} from 'react-native';
 import React from 'react';
 
 const PillsburyComponent = () => {
+  const screenWidth = Dimensions.get('window').width;
   return (
     <View
       style={{
-        width: 390,
+        width: screenWidth-2,
         height: 800,
         backgroundColor: '#194993',
         marginTop: 25,
         marginLeft: 1.5,
         marginBottom: 1,
+        alignItems:'center'
       }}>
       <View
         style={{
@@ -69,7 +71,7 @@ const PillsburyComponent = () => {
         </View>
       </View>
       <View style={{marginTop:20}}>
-        <View style={{alignItems: 'center'}}>
+        <View style={{alignItems:'center'}}>
           <Text style={{color: 'white', fontSize: 12, marginBottom: 10}}>
             Voting ends in
           </Text>
@@ -79,7 +81,7 @@ const PillsburyComponent = () => {
           style={{
             flexDirection: 'row',
           }}>
-          <Text style={{color: 'white', marginLeft: 115}}>Days</Text>
+          <Text style={{color: 'white'}}>Days</Text>
           <Text style={{color: 'white', marginLeft: 15}}>Hrs</Text>
           <Text style={{color: 'white', marginLeft: 21}}>Min</Text>
           <Text style={{color: 'white', marginLeft: 17}}>Sec</Text>
