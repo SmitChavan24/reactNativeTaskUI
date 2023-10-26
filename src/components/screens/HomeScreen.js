@@ -7,8 +7,8 @@ import PillsburyComponent from '../../subcomponents/PillsburyComponent';
 const HomeScreen = () => {
   return (
     <View>
-      <ScrollView>
-      <View style={{flex:1}}>
+      <ScrollView showsVerticalScrollIndicator={false}>
+      <View style={{flex:1,bottom:1.9,right:1}}>
         <ImageBox></ImageBox>
         <TabBarComponent></TabBarComponent>
         <PillsburyComponent></PillsburyComponent>
