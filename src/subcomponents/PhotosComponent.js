@@ -14,7 +14,7 @@ import HeaderComponent from './minorcomponents/HeaderComponent';
 const PhotosComponent = () => {
   const screenWidth = Dimensions.get('window').width;
   return (
-    <View style={[styles.container, {width: screenWidth}]}>
+    <View style={styles.container}>
       <HeaderComponent></HeaderComponent>
       <ImageComment></ImageComment>
       <EndComponent></EndComponent>
@@ -27,6 +27,5 @@ export default PhotosComponent;
 const styles = StyleSheet.create({
   container: {
     flexDirection: 'column',
-    alignItems: 'stretch',
   },
 });
