@@ -14,7 +14,6 @@ const PillsburyComponent = () => {
       }}>
       <View
         style={{
-          flex: 1,
           flexDirection: 'row',
           margin: 10,
         }}>
@@ -49,7 +48,7 @@ const PillsburyComponent = () => {
       </View>
 
       <View
-        style={{flex: 1, flexDirection: 'row', bottom: 150, marginLeft: 22}}>
+        style={{ flexDirection: 'row',  marginLeft: 22,marginTop:20}}>
         <View>
           <Image
             source={require('../assets/majorImages/cakeone.png')}
@@ -69,7 +68,7 @@ const PillsburyComponent = () => {
             style={{marginLeft: 50}}></Image>
         </View>
       </View>
-      <View style={{bottom: 80}}>
+      <View style={{marginTop:20}}>
         <View style={{alignItems: 'center'}}>
           <Text style={{color: 'white', fontSize: 12, marginBottom: 10}}>
             Voting ends in
@@ -137,15 +136,14 @@ const styles = StyleSheet.create({
     color: 'white',
     fontFamily: 'serif',
     fontSize: 28,
-    bottom: 160,
     textAlign: 'center',
   },
   likeImage: {
     marginRight: 19,
   },
   buttoncontainer: {
-    bottom:25,
     marginLeft: 15,
     flexDirection: 'row',
+    marginTop:60
   },
 });

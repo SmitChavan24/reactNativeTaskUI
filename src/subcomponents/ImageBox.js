@@ -16,11 +16,11 @@ const ImageBox = () => {
  
               <Image
                 source={require('../assets/majorImages/cup.png')}
-                style={{width:screenWidth}} ></Image>
+                style={{width:screenWidth,height:250}} ></Image>
          
               <Image
                 source={require('../assets/majorImages/cup.png')}
-                style={{width:screenWidth}}></Image>
+                style={{width:screenWidth,height:250}}></Image>
           
         
         </ScrollView>

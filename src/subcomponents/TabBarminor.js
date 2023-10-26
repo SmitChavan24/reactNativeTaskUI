@@ -1,11 +1,10 @@
-import {StyleSheet, Text, View, TouchableOpacity} from 'react-native';
+import {StyleSheet, Text, View, TouchableOpacity,Dimensions} from 'react-native';
 import React, {useState} from 'react';
 import Photos from './PhotosComponent'
-const Posts = () => {
-  <View style={styles.posts}>Posts</View>;
-};
+
 
 const TabBarminor = () => {
+  const screenWidth = Dimensions.get('window').width;
   const [activeTab, setActiveTab] = useState('posts');
   return (
     <View>
@@ -48,7 +47,7 @@ const TabBarminor = () => {
             borderWidth: activeTab === 'photos' ? 3.5:0,
             width : activeTab === 'photos' ? '50%' : '0%',
             borderColor:'rgba(135, 206, 235, 1)',
-            marginLeft:191,
+            marginLeft:screenWidth/2,
             bottom:4, 
             borderRadius:5,
           }}
@@ -83,6 +82,8 @@ const styles = StyleSheet.create({
     color: 'black',
   },
   tabLine: {
+    flex:1,
+    flexDirection:'row',
     height: 3,
     width: '98%',
     backgroundColor: 'lightblue',
