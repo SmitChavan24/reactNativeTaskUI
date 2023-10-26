@@ -144,7 +144,7 @@ const styles = StyleSheet.create({
     marginRight: 19,
   },
   buttoncontainer: {
-    marginLeft: 15,
+    marginLeft: 25,
     flexDirection: 'row',
     marginTop:60
   },
