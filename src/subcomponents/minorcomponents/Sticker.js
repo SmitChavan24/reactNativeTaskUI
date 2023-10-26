@@ -18,7 +18,7 @@ export default Sticker;
 const styles = StyleSheet.create({
   circlecontainer: {
     position: 'absolute',
-    top: 200,
+    top: 245,
     marginLeft: 150,
   },
   largeCircle: {

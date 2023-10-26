@@ -24,7 +24,7 @@ const Content = () => {
       <View style={styles.textcontainer}>
         <Image
           source={require('../../assets/majorImages/globe.png')}
-          style={styles.imageglobe}></Image>
+          style={[styles.imageglobe,{marginLeft:10}]}></Image>
         <Text
           style={[
             styles.boldsmall,
@@ -33,7 +33,7 @@ const Content = () => {
           pillsburygifting.in
         </Text>
       </View>
-      <View style={{flex:1,flexDirection:'row'}}>
+      <View style={{flex:1,flexDirection:'row',justifyContent:'space-between'}}>
         <View>
           <View style={{marginLeft: 10, marginTop: 5,marginRight:10}}>
             <Text>
@@ -48,7 +48,7 @@ const Content = () => {
                 ]}>
                 12k
               </Text>
-              <Text style={{fontSize: 15}}>   Followers  </Text>
+              <Text style={{fontSize: 15,color:'black'}}>   Followers  </Text>
               <Text
                 style={[
                   styles.bold,
@@ -56,17 +56,17 @@ const Content = () => {
                 ]}>
                 12k
               </Text>
-              <Text style={{fontSize: 15}}>   Posts</Text>
+              <Text style={{fontSize: 15,color:'black'}}>   Likes</Text>
             </Text>
           </View>
           <View style={styles.textcontainer}>
             <Image
               source={require('../../assets/majorImages/calendar.png')}
-              style={[styles.imageglobe,{marginTop:9,marginLeft:13}]}></Image>
-            <Text style={{marginTop:6}}>Created Mar 2023</Text>
+              style={[styles.imageglobe,{marginTop:9,marginLeft:13,marginRight:10}]}></Image>
+            <Text style={{marginTop:6 ,color:'black'}}>Created Mar 2023</Text>
           </View>
         </View>
-        <TouchableOpacity style={{marginLeft:15,bottom:5}}>
+        <TouchableOpacity style={{bottom:5,marginRight:10}}>
           <Image
             source={require('../../assets/majorImages/like.png')}
             style={styles.imageglobe}></Image>
@@ -80,7 +80,8 @@ export default Content;
 
 const styles = StyleSheet.create({
   container:{
-    position:'relative'
+    position:'relative',
+    flex:1
   },
   bold: {
     fontWeight: 'bold',
@@ -107,6 +108,7 @@ const styles = StyleSheet.create({
     flex: 1,
     flexDirection: 'row',
     marginRight: 50,
+    alignItems:'flex-start'
   },
   image: {
     marginRight: 10,
@@ -114,6 +116,7 @@ const styles = StyleSheet.create({
   },
   official: {
     marginTop: 5,
+    color:'black'
   },
   boldsmall: {
     fontWeight: '400',
@@ -130,8 +133,6 @@ const styles = StyleSheet.create({
     width: 15,
   },
   imageglobe: {
-    marginLeft: 10,
-    marginRight: 10,
     marginTop: 12,
   },
 });
