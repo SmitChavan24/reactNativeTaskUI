@@ -9,9 +9,10 @@ import {
 import React from 'react'
 
 const HeaderComponent = () => {
+  const screenWidth = Dimensions.get('window').width;
   return (
     <View >
-    <View style={[styles.container,{flexDirection:'row',marginBottom:0,marginTop:0}]}>
+    <View style={[styles.container,{flexDirection:'row'}]}>
       <Image
         source={require('../../assets/majorImages/pillsbury.png')}
         style={styles.circleimage}></Image>
@@ -36,8 +37,7 @@ export default HeaderComponent
 const styles = StyleSheet.create({
     container: {
       margin: 10,
-      flexDirection: 'column',
-      alignItems:'center'
+      flexDirection: 'column',     
     },
     circleimage: {
       height: 50,
