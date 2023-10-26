@@ -10,7 +10,7 @@ import React from 'react'
 
 const EndComponent = () => {
   return (
-<View style={{right:70}}>
+<View style={{marginLeft:10}}>
     <View style={{ flexDirection: 'row' ,marginLeft:5}}>
       <Image
         source={require('../../assets/majorImages/hearty.png')}
