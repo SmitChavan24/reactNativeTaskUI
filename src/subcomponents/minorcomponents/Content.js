@@ -33,7 +33,7 @@ const Content = () => {
           pillsburygifting.in
         </Text>
       </View>
-      <View style={{flex:1,flexDirection:'row',justifyContent:'space-between'}}>
+      <View style={{flex:1,flexDirection:'row',justifyContent:'space-between',marginBottom:responsiveHeight(1)}}>
         <View>
           <View style={{ marginTop: 5,marginRight:10}}>
             <Text>
@@ -61,15 +61,18 @@ const Content = () => {
           <View style={styles.textcontainer}>
             <Image
               source={require('../../assets/majorImages/calendar.png')}
-              style={[styles.imageglobe,{marginTop:9,marginRight:10,marginLeft:responsiveWidth(1)}]}></Image>
+              style={[styles.imageglobe,{marginTop:9,marginRight:responsiveWidth(1),marginLeft:responsiveWidth(1)}]}></Image>
             <Text style={{marginTop:6 ,color:'black'}}>Created Mar 2023</Text>
           </View>
         </View>
+        <View>
+
         <TouchableOpacity style={{bottom:5,marginRight:responsiveWidth(4)}}>
           <Image
             source={require('../../assets/majorImages/like.png')}
             style={styles.imageglobe}></Image>
         </TouchableOpacity>
+        </View>
       </View>
     </View>
   );

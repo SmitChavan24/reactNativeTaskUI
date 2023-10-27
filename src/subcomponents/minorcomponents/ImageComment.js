@@ -10,10 +10,10 @@ import React from 'react';
 import { responsiveHeight,responsiveFontSize,responsiveWidth } from 'react-native-responsive-dimensions';
 
 const ImageComment = () => {
-  const screenWidth = Dimensions.get('window').width;
+
   return (
-    <View style={{flex:1,alignItems: 'center'}}>
-      <View style={{marginLeft: responsiveWidth(0.2)}}>
+    <View style={{flex:1}}>
+      <View style={{marginLeft: responsiveWidth(0.2),alignItems:'center'}}>
         <Image
           source={require('../../assets/majorImages/bournvita.png')}
           style={[{width: responsiveWidth(98)}, styles.mainImage]}
@@ -50,7 +50,7 @@ const styles = StyleSheet.create({
     height: responsiveHeight(50),
   },
   likeImage: {
-    marginRight: 15,
+    marginRight:responsiveWidth(4),
   },
   buttoncontainer: {
     flexDirection: 'row',
