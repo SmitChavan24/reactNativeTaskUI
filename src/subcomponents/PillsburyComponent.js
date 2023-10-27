@@ -1,16 +1,17 @@
 import {StyleSheet, Text, View, Image,TouchableOpacity,Dimensions} from 'react-native';
 import React from 'react';
+import { responsiveHeight,responsiveFontSize,responsiveWidth } from 'react-native-responsive-dimensions';
 
 const PillsburyComponent = () => {
   const screenWidth = Dimensions.get('window').width;
   return (
     <View
       style={{
-        width: screenWidth-2,
-        height: 800,
+        width: responsiveWidth(98),
+        height: responsiveHeight(105),
         backgroundColor: '#194993',
         marginTop: 25,
-        marginLeft: 1.5,
+        marginLeft: responsiveWidth(1),
         marginBottom: 1,
         alignItems:'center'
       }}>
@@ -75,7 +76,7 @@ const PillsburyComponent = () => {
           <Text style={{color: 'white', fontSize: 12, marginBottom: 10}}>
             Voting ends in
           </Text>
-          <Text style={{color: 'white', fontSize: 26}}>9 : 23: 10: 25</Text>
+          <Text style={{color: 'white', fontSize: responsiveFontSize(3)}}>9 : 23: 10: 25</Text>
         </View>
         <View
           style={{
@@ -137,7 +138,7 @@ const styles = StyleSheet.create({
   textBig: {
     color: 'white',
     fontFamily: 'serif',
-    fontSize: 28,
+    fontSize: responsiveFontSize(4),
     textAlign: 'center',
   },
   likeImage: {

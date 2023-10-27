@@ -7,15 +7,16 @@ import {
   Dimensions,
 } from 'react-native';
 import React from 'react';
+import { responsiveHeight,responsiveFontSize,responsiveWidth } from 'react-native-responsive-dimensions';
 
 const ImageComment = () => {
   const screenWidth = Dimensions.get('window').width;
   return (
     <View style={{flex:1,alignItems: 'center'}}>
-      <View>
+      <View style={{marginLeft: responsiveWidth(0.2)}}>
         <Image
           source={require('../../assets/majorImages/bournvita.png')}
-          style={[{width: screenWidth - 1}, styles.mainImage]}
+          style={[{width: responsiveWidth(98)}, styles.mainImage]}
           resizeMode="contain"></Image>
         <View style={styles.buttoncontainer}>
           <TouchableOpacity>
@@ -46,13 +47,13 @@ export default ImageComment;
 
 const styles = StyleSheet.create({
   mainImage: {
-    height: 400,
+    height: responsiveHeight(50),
   },
   likeImage: {
     marginRight: 15,
   },
   buttoncontainer: {
-    marginLeft: 15,
     flexDirection: 'row',
+    marginLeft: responsiveWidth(2)
   },
 });

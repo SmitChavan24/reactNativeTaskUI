@@ -7,6 +7,7 @@ import {
   Dimensions,
 } from 'react-native';
 import React from 'react';
+import { responsiveHeight,responsiveFontSize,responsiveWidth } from 'react-native-responsive-dimensions';
 
 const HeaderComponent = () => {
   const screenWidth = Dimensions.get('window').width;
@@ -38,7 +39,7 @@ export default HeaderComponent;
 
 const styles = StyleSheet.create({
   container: {
-    margin: 10,
+    marginBottom:responsiveHeight(1),
     justifyContent: 'space-between',
   },
   circleimage: {

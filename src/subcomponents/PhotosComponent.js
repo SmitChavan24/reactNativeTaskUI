@@ -12,7 +12,6 @@ import ImageComment from './minorcomponents/ImageComment';
 import HeaderComponent from './minorcomponents/HeaderComponent';
 
 const PhotosComponent = () => {
-  const screenWidth = Dimensions.get('window').width;
   return (
     <View style={styles.container}>
       <HeaderComponent></HeaderComponent>
