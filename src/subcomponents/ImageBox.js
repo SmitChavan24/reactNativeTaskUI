@@ -7,7 +7,7 @@ const ImageBox = () => {
 
   return (
     <View>
-      <View>
+      <View style={{alignItems:'center'}}>
         <ScrollView
           horizontal={true}
           pagingEnabled={true}

@@ -82,7 +82,6 @@ export default Content;
 
 const styles = StyleSheet.create({
   container:{
-    flex:1,
     marginLeft:responsiveWidth(3)
   },
   bold: {
@@ -105,7 +104,6 @@ const styles = StyleSheet.create({
     marginRight: 10,
   },
   textcontainer: {
-    flex: 1,
     flexDirection: 'row',
   },
   image: {

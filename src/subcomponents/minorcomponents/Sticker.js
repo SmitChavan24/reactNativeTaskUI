@@ -18,22 +18,21 @@ export default Sticker;
 const styles = StyleSheet.create({
   circlecontainer: {
     position: 'absolute',
-    marginTop: responsiveHeight(29),
-    marginLeft: responsiveWidth(38),
+    marginTop:responsiveHeight(30)
   },
   largeCircle: {
-    width: 100, // Adjust the size as needed
-    height: 100, // Adjust the size as needed
+    width: responsiveWidth(23), // Adjust the size as needed
+    height: responsiveWidth(23), // Adjust the size as needed
     backgroundColor: 'white',
-    borderRadius: 100, // Half of the width and height for a perfect circle
+    borderRadius: responsiveWidth(23), // Half of the width and height for a perfect circle
     alignItems: 'center',
     justifyContent: 'center',
-    bottom: 25,
-    left: 130,
+    bottom: responsiveHeight(3),
+    marginLeft:responsiveWidth(70)
   },
   circleimage: {
-    width: 80, // Adjust the size as needed
-    height: 80, // Adjust the size as needed
-    borderRadius: 40, // Half of the width and height for a perfect circle
+    width: responsiveWidth(18), // Adjust the size as needed
+    height: responsiveWidth(18), // Adjust the size as needed
+    borderRadius: responsiveWidth(18), // Half of the width and height for a perfect circle
   },
 });

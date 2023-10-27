@@ -7,16 +7,17 @@ const PillsburyComponent = () => {
   return (
     <View
       style={{
-        width: responsiveWidth(98),
-        height: responsiveHeight(100),
+        flex:3,
         backgroundColor: '#194993',
         marginTop: 25,
         marginLeft: responsiveWidth(1),
         marginBottom: 1,
+        marginRight:responsiveWidth(1),
         alignItems:'center'
       }}>
       <View
         style={{
+          flex:1,
           flexDirection: 'row',
           marginTop:responsiveHeight(1),
           justifyContent:'space-between'
@@ -148,6 +149,6 @@ const styles = StyleSheet.create({
   buttoncontainer: {
     marginLeft: 25,
     flexDirection: 'row',
-    marginTop:40
+    marginTop:responsiveHeight(5)
   },
 });
