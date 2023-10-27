@@ -1,6 +1,6 @@
 import {StyleSheet, Text, View, Image,TouchableOpacity} from 'react-native';
 import React from 'react';
-
+import { responsiveHeight,responsiveFontSize,responsiveWidth } from 'react-native-responsive-dimensions';
 const Content = () => {
   return (
     <View style={styles.container}>
@@ -16,33 +16,32 @@ const Content = () => {
         <Text style={styles.boldsmall}>
           Make every cooking moment special with your loved ones with our range
           of Pillsbury products
-        </Text>
         <Image
           source={require('../../assets/majorImages/hearty.png')}
           style={styles.imageheart}></Image>
+        </Text>
       </View>
       <View style={styles.textcontainer}>
         <Image
           source={require('../../assets/majorImages/globe.png')}
-          style={[styles.imageglobe,{marginLeft:10}]}></Image>
+          style={styles.imageglobe}></Image>
         <Text
           style={[
             styles.boldsmall,
-            {marginTop: 9, fontSize: 13, fontWeight: '400', marginLeft: 3},
+            {marginTop: 9, fontSize: responsiveFontSize(1.6), fontWeight: '400', marginLeft: responsiveWidth(2)},
           ]}>
           pillsburygifting.in
         </Text>
       </View>
       <View style={{flex:1,flexDirection:'row',justifyContent:'space-between'}}>
         <View>
-          <View style={{marginLeft: 10, marginTop: 5,marginRight:10}}>
+          <View style={{ marginTop: 5,marginRight:10}}>
             <Text>
               <Text
                 style={[
                   styles.bold,
                   {
                     fontSize: 17,
-                    marginTop: 0,
                     fontWeight: '500',
                   },
                 ]}>
@@ -52,7 +51,7 @@ const Content = () => {
               <Text
                 style={[
                   styles.bold,
-                  {fontSize: 17, marginTop: 0, fontWeight: '500',marginLeft:15},
+                  {fontSize: 17, fontWeight: '500',marginLeft:15},
                 ]}>
                 12k
               </Text>
@@ -62,11 +61,11 @@ const Content = () => {
           <View style={styles.textcontainer}>
             <Image
               source={require('../../assets/majorImages/calendar.png')}
-              style={[styles.imageglobe,{marginTop:9,marginLeft:13,marginRight:10}]}></Image>
+              style={[styles.imageglobe,{marginTop:9,marginRight:10,marginLeft:responsiveWidth(1)}]}></Image>
             <Text style={{marginTop:6 ,color:'black'}}>Created Mar 2023</Text>
           </View>
         </View>
-        <TouchableOpacity style={{bottom:5,marginRight:10}}>
+        <TouchableOpacity style={{bottom:5,marginRight:responsiveWidth(4)}}>
           <Image
             source={require('../../assets/majorImages/like.png')}
             style={styles.imageglobe}></Image>
@@ -80,14 +79,13 @@ export default Content;
 
 const styles = StyleSheet.create({
   container:{
-    position:'relative',
-    flex:1
+    flex:1,
+    marginLeft:responsiveWidth(3)
   },
   bold: {
     fontWeight: 'bold',
     color: 'black',
-    fontSize: 20,
-    margin: 10,
+    fontSize: responsiveFontSize(2.5),
     marginBottom: 4,
     marginTop: 5,
   },
@@ -99,16 +97,13 @@ const styles = StyleSheet.create({
   },
   textNormal: {
     color: 'black',
-    fontSize: 20,
-    marginLeft: 10,
+    fontSize: responsiveFontSize(2.5),
     fontWeight: '300',
     marginRight: 10,
   },
   textcontainer: {
     flex: 1,
     flexDirection: 'row',
-    marginRight: 50,
-    alignItems:'flex-start'
   },
   image: {
     marginRight: 10,
@@ -121,10 +116,8 @@ const styles = StyleSheet.create({
   boldsmall: {
     fontWeight: '400',
     color: 'black',
-    fontSize: 15,
-    marginLeft: 10,
+    fontSize: responsiveFontSize(1.9),
     marginTop: 5,
-    marginBottom: 4,
   },
   imageheart: {
     right: 0,

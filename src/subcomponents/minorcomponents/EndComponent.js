@@ -7,10 +7,11 @@ import {
     Dimensions,
   } from 'react-native';
 import React from 'react'
+import { responsiveHeight,responsiveFontSize,responsiveWidth } from 'react-native-responsive-dimensions';
 
 const EndComponent = () => {
   return (
-<View style={{marginLeft:10}}>
+<View style={{marginLeft:responsiveWidth(5)}}>
     <View style={{ flexDirection: 'row' ,marginLeft:5}}>
       <Image
         source={require('../../assets/majorImages/hearty.png')}

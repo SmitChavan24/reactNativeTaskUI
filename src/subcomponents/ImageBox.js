@@ -2,9 +2,9 @@ import {StyleSheet, Text, View, ScrollView, Image,Dimensions} from 'react-native
 import React, {useState} from 'react';
 import Sticker from './minorcomponents/Sticker';
 import Content from './minorcomponents/Content';
-
+import { responsiveHeight,responsiveFontSize,responsiveWidth } from 'react-native-responsive-dimensions';
 const ImageBox = () => {
-  const screenWidth = Dimensions.get('window').width;
+
   return (
     <View>
       <View>
@@ -16,11 +16,11 @@ const ImageBox = () => {
  
               <Image
                 source={require('../assets/majorImages/cup.png')}
-                style={{width:screenWidth,height:200}} ></Image>
+                style={{width:responsiveWidth(100),height:responsiveHeight(30)}} ></Image>
          
               <Image
                 source={require('../assets/majorImages/cup.png')}
-                style={{width:screenWidth,height:200}}></Image>
+                style={{width:responsiveWidth(100),height:responsiveHeight(30)}}></Image>
           
         
         </ScrollView>

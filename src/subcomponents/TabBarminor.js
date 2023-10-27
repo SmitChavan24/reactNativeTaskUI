@@ -30,7 +30,7 @@ const TabBarminor = () => {
         </TouchableOpacity>
       </View>
 
-      <View style={[styles.tabLine]}>
+      <View style={styles.tabLine}>
 
       <View
           style={{
