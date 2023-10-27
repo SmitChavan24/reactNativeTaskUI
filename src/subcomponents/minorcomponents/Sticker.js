@@ -1,6 +1,6 @@
 import React from 'react';
 import {StyleSheet, Text, View, Image} from 'react-native';
-
+import { responsiveHeight,responsiveFontSize,responsiveWidth } from 'react-native-responsive-dimensions';
 const Sticker = () => {
   return (
     <View style={styles.circlecontainer}>
@@ -18,8 +18,8 @@ export default Sticker;
 const styles = StyleSheet.create({
   circlecontainer: {
     position: 'absolute',
-    top: 200,
-    marginLeft: 150,
+    marginTop: responsiveHeight(29),
+    marginLeft: responsiveWidth(38),
   },
   largeCircle: {
     width: 100, // Adjust the size as needed

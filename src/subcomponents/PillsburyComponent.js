@@ -8,7 +8,7 @@ const PillsburyComponent = () => {
     <View
       style={{
         width: responsiveWidth(98),
-        height: responsiveHeight(105),
+        height: responsiveHeight(100),
         backgroundColor: '#194993',
         marginTop: 25,
         marginLeft: responsiveWidth(1),
@@ -18,24 +18,25 @@ const PillsburyComponent = () => {
       <View
         style={{
           flexDirection: 'row',
-          margin: 10,
+          marginTop:responsiveHeight(1),
+          justifyContent:'space-between'
         }}>
-        <Image
-          source={require('../assets/majorImages/pillsbury.png')}
-          style={styles.circleimage}
-          resizeMode="contain"></Image>
+        <View style={{flexDirection:'row'}}>
+          <Image
+            source={require('../assets/majorImages/pillsbury.png')}
+            style={styles.circleimage}
+            resizeMode="contain"></Image>
 
-        <View style={{marginTop: 15, marginLeft: 5}}>
-          <Text style={styles.text}>Pillsbury</Text>
-          <Text style={styles.textsmall}>Feb 21 9:00 AM</Text>
+          <View style={{marginTop: 15, marginLeft: 5}}>
+            <Text style={styles.text}>Pillsbury</Text>
+            <Text style={styles.textsmall}>Feb 21 9:00 AM</Text>
+          </View>
         </View>
 
         <View
           style={{
-            marginTop: 5,
-            alignItems: 'center',
-            marginLeft: 45,
-            bottom: 42,
+            bottom: 33,
+            marginLeft:responsiveWidth(9)
           }}>
           <Image
             source={require('../assets/majorImages/mcpoll.png')}
@@ -51,24 +52,24 @@ const PillsburyComponent = () => {
       </View>
 
       <View
-        style={{ flexDirection: 'row',  marginLeft: 22,marginTop:20}}>
-        <View>
+        style={{ flexDirection: 'row',marginTop:20}}>
+        <View style={{alignItems:'center'}}>
           <Image
             source={require('../assets/majorImages/cakeone.png')}
             resizeMode="contain"></Image>
           <Image
             source={require('../assets/majorImages/thumbsup.png')}
             resizeMode="contain"
-            style={{marginLeft: 50}}></Image>
+            ></Image>
         </View>
-        <View>
+        <View style={{alignItems:'center'}}>
           <Image
             source={require('../assets/majorImages/caketwo.png')}
             resizeMode="contain"></Image>
           <Image
             source={require('../assets/majorImages/thumbsup.png')}
             resizeMode="contain"
-            style={{marginLeft: 50}}></Image>
+            ></Image>
         </View>
       </View>
       <View style={{marginTop:20}}>
@@ -147,6 +148,6 @@ const styles = StyleSheet.create({
   buttoncontainer: {
     marginLeft: 25,
     flexDirection: 'row',
-    marginTop:60
+    marginTop:40
   },
 });
