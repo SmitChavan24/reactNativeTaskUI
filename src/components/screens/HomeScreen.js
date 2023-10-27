@@ -8,7 +8,7 @@ const HomeScreen = () => {
   return (
     <SafeAreaView>
       <ScrollView showsVerticalScrollIndicator={false}>
-      <View style={{flex:1, flexDirection:'column',alignItems:'center '}}>
+      <View style={{display:'flex', flexDirection:'column',alignItems:'center '}}>
         <ImageBox></ImageBox>
         <TabBarComponent></TabBarComponent>
         <PillsburyComponent></PillsburyComponent>

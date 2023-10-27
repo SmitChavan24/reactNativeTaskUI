@@ -18,7 +18,7 @@ export default Sticker;
 const styles = StyleSheet.create({
   circlecontainer: {
     position: 'absolute',
-    marginTop:responsiveHeight(30)
+    marginTop:responsiveHeight(29)
   },
   largeCircle: {
     width: responsiveWidth(23), // Adjust the size as needed
