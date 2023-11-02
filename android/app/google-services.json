@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "144588651223",
+    "project_id": "remindernative",
+    "storage_bucket": "remindernative.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:144588651223:android:779e3f4c242ae7acfa4e92",
+        "android_client_info": {
+          "package_name": "com.example.socialproject"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxWDNLZeLBa2qGsGs9SL6Q9kxND7f8ZR8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
