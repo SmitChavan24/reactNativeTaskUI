@@ -5,6 +5,7 @@ import TabBarComponent from '../../subcomponents/TabBarComponent';
 import PillsburyComponent from '../../subcomponents/PillsburyComponent';
 import UserComponent from '../../subcomponents/UserComponent';
 import FirebaseComponent from '../../subcomponents/FirebaseComponent';
+import SqlLiteComponent from '../../subcomponents/SqlLiteComponent';
 
 const HomeScreen = () => {
   return (
@@ -12,7 +13,8 @@ const HomeScreen = () => {
       <ScrollView showsVerticalScrollIndicator={false}>
       <View style={{display:'flex', flexDirection:'column',alignItems:'center '}}>
       {/* <UserComponent></UserComponent> */}
-      <FirebaseComponent></FirebaseComponent>
+      {/* <FirebaseComponent></FirebaseComponent> */}
+      <SqlLiteComponent></SqlLiteComponent>
         <ImageBox></ImageBox>
         <TabBarComponent></TabBarComponent>
         <PillsburyComponent></PillsburyComponent>
