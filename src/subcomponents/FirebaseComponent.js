@@ -2,20 +2,32 @@ import {StyleSheet, Text, View, TextInput, Button} from 'react-native';
 import React from 'react';
 import uuid from 'react-native-uuid';
 import firestore from "@react-native-firebase/firestore"
-
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 const FirebaseComponent = () => {
   const addUser = () => {
     const userid = uuid.v4();
-   const users=firestore().collection('users').doc(userid).set({
-    name:'smit chavan',
-    surname:"chavan",
-    phone:8104286670,
-    age:22,
-    description:'paidaishi choro'
-   });
+    let data={
+      name:'smit chavan',
+      surname:"chavan",
+      phone:8104286670,
+      age:22,
+      description:'paidaishi choro'
+     }
+  firestore().collection('users').doc(userid).set(data).then((res)=>{
+    console.log('Data successfully written:', );
+      AsyncStorage.setItem('userData',JSON.stringify(data));
+   }).catch((err)=>{
+    console.log(err)
+   })
+  
+   
   };
-  const fetchUsers = () => {};
+  const fetchUsers = async() => {
+    const value = await AsyncStorage.getItem('userData');
+    JSON.parse(value)
+    console.log(value)
+  };
 
   const updateUsers = () => {};
   return (
